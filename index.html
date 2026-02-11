@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For You 🌸</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1 class="title">Hey You 🌸</h1>
+  <p class="subtitle">I made something just for you</p>
+
+  <button id="themeBtn">Switch Theme 🎨</button>
+  <button id="musicBtn">🔊 Play Music</button>
+<audio id="bgMusic" loop>
+  <source src="assets/Naazni.mp3" type="audio/mpeg">
+</audio>
+
+
+  <div id="question">
+    <p class="subtitle">You wanna see?</p>
+    <button id="yesBtn">Yes</button>
+    <button id="noBtn">No</button>
+  </div>
+
+  <div class="red-roses">
+    <img src="assets/lovee.png" class="rose rr1">
+    <img src="assets/love2.png" class="rose rr2">
+    <img src="assets/love3.png" class="rose rr3">
+    <img src="assets/love4.png" class="rose rr4">
+    <img src="assets/love5.png" class="rose rr5">
+  </div>
+
+  <div class="bouquet hidden">
+    <div class="polaroid">
+      <img src="assets/love.png" class="love-img">
+      <div class="caption">For You 🌸</div>
+    </div>
+  </div>
+
+  <!-- Message area -->
+  <div id="message" class="hidden">
+    <p id="typeText"></p>
+  </div>
+
+  <!-- Secret unlock -->
+  <div id="secretBox" class="hidden">
+    <p>Enter secret word 🔐</p>
+    <input type="password" id="secretInput">
+    <button id="unlockBtn">Unlock</button>
+  </div>
+
+  <div id="noMessage" class="hidden">
+    <p>Come on — at least take a peek 😄</p>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

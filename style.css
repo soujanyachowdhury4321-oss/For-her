@@ -1,0 +1,116 @@
+:root {
+  --bg1: #ffdde1;
+  --bg2: #ee9ca7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--bg1), var(--bg2));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+.container {
+  text-align: center;
+  background: rgba(255,255,255,0.95);
+  padding: 30px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 600px;
+  max-height: 85vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.title {
+  font-size: 2.4rem;
+  color: #ff4d6d;
+  margin-bottom: 10px;
+  font-family: "Comic Sans MS", cursive;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  background: #ff4d6d;
+  color: white;
+  margin: 6px;
+}
+
+#themeBtn { background:#444; }
+
+.red-roses {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  margin: 20px auto;
+}
+
+.rose {
+  position: absolute;
+  width: 70px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.rr1 { left:60px; top:0; }
+.rr2 { left:0; top:60px; animation-delay:.5s; }
+.rr3 { left:110px; top:60px; animation-delay:1s; }
+.rr4 { left:40px; top:110px; animation-delay:1.5s; }
+.rr5 { left:90px; top:110px; animation-delay:2s; }
+
+@keyframes float {
+  0%,100% { transform:translateY(0); }
+  50% { transform:translateY(-12px); }
+}
+
+.polaroid {
+  background:white;
+  padding:12px 12px 30px;
+  border-radius:10px;
+  box-shadow:0 15px 25px rgba(0,0,0,.25);
+  transform:rotate(-2deg);
+}
+
+.love-img {
+  width:100%;
+  border-radius:10px;
+}
+
+#message {
+  font-size:1.25rem;
+  color:#ff0066;
+  margin-top:20px;
+  line-height:1.5;
+}
+
+.hidden { display:none; }
+
+.heart {
+  position:fixed;
+  bottom:-40px;
+  font-size:22px;
+  animation: floatHeart linear forwards;
+}
+
+@keyframes floatHeart {
+  to { transform:translateY(-700px); opacity:0; }
+}
+#musicBtn {
+  background: #6b6b6b;
+}
